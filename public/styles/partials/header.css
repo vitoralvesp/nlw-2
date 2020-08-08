@@ -12,7 +12,6 @@
 .page-header .top-bar-container {
     width: 90%;
     margin: 0 auto;
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,6 +52,7 @@
 }
 
 @media (min-width: 700px) {
+    
     .page-header {
         height: 340px;
     }

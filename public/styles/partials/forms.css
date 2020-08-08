@@ -28,13 +28,17 @@
 
 .input-block:focus-width::after, .textarea-block:focus-within::after{
     content:"";
-
     width: calc(100% - 3.2rem);
     height: 2px;
     background: var(--color-primary-light);
     position: absolute;
     left: 1.6rem;
     right: 1.6rem;
-    bottom: 0;
+    bottom: 0px;
 }
 
+label small {
+    font-size: 1.2rem;
+    padding-left: 1.2rem;
+    color: var(--color-small-info);
+}
