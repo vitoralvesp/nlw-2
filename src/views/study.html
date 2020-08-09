@@ -62,8 +62,13 @@
         </header>
 
         <main>
-            {%for proffy in proffys %}
-                <article class="proffy-item">
+
+            {%if proffys == "" %}
+                <p class="no results">Nenhum proffy encontrado com a sua pesquisa</p>
+            {%else%}
+
+                {%for proffy in proffys %}
+                    <article class="proffy-item">
                 <header>
                     <img 
                         src="{{proffy.avatar}}" 
@@ -83,9 +88,10 @@
                         <img src="/images/icons/whatsapp.svg" alt="WhatsApp">
                     </a>
                 </footer>
-                </article>
-            {%endfor%}
-              
+                    </article>
+                {%endfor%}
+
+            {% endif %}
         </main>   
     </div>
 </body>
